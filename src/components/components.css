@@ -1,0 +1,41 @@
+/* InputField */
+.if-root { display: flex; flex-direction: column; gap: 6px; width: 100%; }
+.if-label { font-size: 0.9rem; font-weight: 600; color: #374151; }
+.if-field { position: relative; }
+.if-input { width: 100%; border-radius: 10px; outline: none; transition: box-shadow .15s, border-color .15s; }
+.if-input:focus { box-shadow: 0 0 0 3px rgba(59,130,246,.2); border-color: #3b82f6; }
+.if-invalid { border-color: #ef4444 !important; box-shadow: 0 0 0 3px rgba(239,68,68,.15); }
+.if-disabled { background: #f3f4f6; cursor: not-allowed; color: #6b7280; }
+
+.if-outlined { border: 1px solid #d1d5db; background: #fff; padding: 10px 12px; }
+.if-filled   { border: 1px solid transparent; background: #f3f4f6; padding: 10px 12px; }
+.if-ghost    { border: none; border-bottom: 1px solid #d1d5db; border-radius: 0; background: transparent; padding: 8px 0; }
+
+.if-sm { font-size: 0.85rem; padding: 8px 10px; }
+.if-md { font-size: 1rem;    padding: 10px 12px; }
+.if-lg { font-size: 1.125rem; padding: 12px 14px; }
+
+.if-clear, .if-toggle {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  border: none; background: transparent; cursor: pointer; line-height: 1;
+  color: #6b7280; padding: 2px 4px; font-size: 14px;
+}
+.if-clear { right: 8px; }
+.if-toggle { right: 36px; }
+.if-help { font-size: 0.8rem; color: #6b7280; }
+.if-error { color: #ef4444; }
+
+/* DataTable */
+.dt-wrap { width: 100%; }
+.dt-scroll { overflow-x: auto; border: 1px solid #e5e7eb; border-radius: 14px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+.dt { min-width: 640px; width: 100%; border-collapse: collapse; font-size: .95rem; }
+.dt-head { background: #f9fafb; }
+.dt-th { padding: 12px 14px; font-weight: 600; color: #374151; text-align: left; white-space: nowrap; }
+.dt-th-select { width: 48px; }
+.dt-sort { display: inline-flex; align-items: center; gap: 6px; border: none; background: transparent; cursor: pointer; padding: 0; color: inherit; }
+.dt-sort-icon { opacity: 0.6; }
+.dt-row.alt { background: #fcfcfd; }
+.dt-td { padding: 12px 14px; border-top: 1px solid #f3f4f6; color: #111827; }
+.dt-td-center { text-align: center; padding: 18px; color: #6b7280; }
+.dt-td-select { width: 48px; }
+.dt-hint { margin-top: 8px; font-size: 12px; color: #6b7280; }
